@@ -40,9 +40,9 @@ button {
 }
 
 
-/* total score */
+/* total score container */
 
-.total-score {
+#container-score-home, #container-score-guest {
     display: flex;
     width: 320px;
     padding: 20px;
@@ -50,16 +50,13 @@ button {
     align-items: flex-start;
     border-radius: 24px;
     border: 1px solid #FFF;
-    background: #020097;
+    background-color: #CFCFCF;
     align-self: stretch;
     justify-content: space-between;
 }
 
-#looser {
-    background: #A8A8A8;;
-}
 
-.total-score h3 {
+#container-score-home h3, #container-score-guest h3  {
 color: #FFF;
 font-family: "DM Sans 36pt";
 font-size: 28px;
@@ -70,7 +67,7 @@ align-self: stretch;
 
 }
 
-.total-score h1 {
+#container-score-home h1, #container-score-guest h1  {
     color: #FFF;
     font-family: "DM Sans 36pt";
     font-size: 80px;
@@ -175,4 +172,14 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+}
+
+/* leader */
+
+#container-score-home.leader-color {
+    background-color: #020097;
+}
+
+#container-score-guest.leader-color {
+    background-color: #020097;
 }

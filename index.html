@@ -24,13 +24,13 @@
             <div class="score">
                  <!-- points buttons group -->
                 <div class="points-group"> 
-                    <button>+1pt</button>
-                    <button>+2pts</button>
-                    <button>+3pts</button>
+                    <button class="one-point" onclick="addOnePointHome()">+1pt</button>
+                    <button class="two-point" onclick="addTwoPointsHome()">+2pts</button>
+                    <button class="three-point" onclick="addThreePointsHome()">+3pts</button>
                 </div>
-                <!-- total score -->
-                <div class="total-score">
-                    <h1>0</h1>
+                <!-- total score home container -->
+                <div id="container-score-home">
+                    <h1 id="score-home">0</h1>
                     <h3>Total Score</h3>
                 </div>
             </div>
@@ -44,21 +44,21 @@
             </div>
             <!-- team score -->
             <div class="score">
-                <!-- total score -->
-                <div class="total-score" id="looser">
-                    <h1>0</h1>
+                <!-- total score guest container-->
+                <div id="container-score-guest">
+                    <h1 id="score-guest">0</h1>
                     <h3>Total Score</h3>
                 </div>
                 <!-- points buttons group -->
                 <div class="points-group"> 
-                    <button>+1pt</button>
-                    <button>+2pts</button>
-                    <button>+3pts</button>
+                    <button class="one-point" onclick="addOnePointGuest()">+1pt</button>
+                    <button class="two-point" onclick="addTwoPointsGuest()">+2pts</button>
+                    <button class="three-point" onclick="addThreePointsGuest()">+3pts</button>
                 </div>
             </div>
         </div>
 
-        <!-- Team containers main block starts -->
+        <!-- Team containers main block ends -->
         </div>
 
 
