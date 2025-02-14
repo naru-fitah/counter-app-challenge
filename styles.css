@@ -119,7 +119,7 @@ align-self: stretch;
 
 /* timer */
 
-.time h3 {
+.time-left h3 {
 color: #000;
 text-align: center;
 font-family: "DM Sans 36pt";
@@ -131,8 +131,9 @@ align-self: stretch;
 flex: 1 0 0;
 }
 
-.time {
+.time-left {
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 10px;

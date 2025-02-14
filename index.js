@@ -76,6 +76,31 @@ function updateLeaderHighlight() {
     }    
 }
 
+// Timer
+
+let timeLeft = 20
+const timerDisplay = document.getElementById("timer-display")
+console.log(timerDisplay)
+const winner = document.getElementById("message")
+
+const timerInterval = setInterval(() => {
+    timeLeft--;
+    timerDisplay.textContent = timeLeft + "s";
+    if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        if (homeScore > guestScore) {
+            winner.textContent = "Home Wins!"
+        }
+        else if (guestScore > homeScore) {
+            winner.textContent = "Guest Wins!"
+        }
+        else {
+            winner.textContent = "Draw!"
+        }
+        // Optional: Add logic to end the game or disable buttons
+    }
+}, 1000);
+
 
 
 
