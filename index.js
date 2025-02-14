@@ -97,7 +97,7 @@ const timerInterval = setInterval(() => {
         else {
             winner.textContent = "Draw!"
         }
-        // Optional: Add logic to end the game or disable buttons
+
     }
 }, 1000);
 
